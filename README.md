@@ -1,1 +1,1 @@
-<h1> Javascript notes I made while learning </h1>
+<h1> Javascript Basics </h1>
