@@ -9,3 +9,5 @@ console.log("The value of z is " + z + ".");
 /* JavaScript statements are composed of:
 Values, Operators, Expressions, Keywords, and Comments. */
 
+// Expression --> Produces value for eg: (2+4), (1991), ('This is a expression')
+// statement --> complete sentence
