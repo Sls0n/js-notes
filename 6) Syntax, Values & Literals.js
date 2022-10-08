@@ -1,20 +1,18 @@
-
 // JavaScript Syntax
 
 // JavaScript syntax is the set of rules, how JavaScript programs are constructed:
 
-
 // How to create variables:
-    var x;
-    let y;
+var x;
+let y;
 
 // How to use variables:
-    x = 5;
-    y = 6;
-    let z = x + y;
+x = 5;
+y = 6;
+let z = x + y;
 
 // To print z:
-    console.log(z)
+console.log(z);
 
 // JavaScript Values:
 /*
@@ -25,8 +23,7 @@
     Fixed values are called Literals.
     Variable values are called Variables. 
 */
-    console.log("Value");
-
+console.log("Value");
 
 // JavaScript Literals:
 /*
@@ -39,5 +36,3 @@
             - "John Doe"
             - 'John Doe'
 */
-
-
