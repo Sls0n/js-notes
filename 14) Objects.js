@@ -78,3 +78,34 @@ console.log(mark.BMI);
 
 john.calcBMI();
 console.log(john.BMI);
+
+// --Destructuring Objects--
+
+const restaurant = {
+	namee: "Classico Italiano",
+	location: "Via Angelo Tavanti 23, Firenze, Italy",
+	categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+	starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+	mainMenu: ["Pizza", "Pasta", "Risotto"],
+};
+
+const { namee, mainMenu, categories } = restaurant;
+console.log(namee, mainMenu, categories); // -------{i}
+
+// To assign a new name to the variable
+
+const { namee: resturantName, mainMenu: primaryMenu, categories : tags } = resturant;
+console.log(resturantName, primaryMenu, tags); // same as {i}
+
+
+// Setting up default value is it doesn't exist.
+const { nameee = []} = resturant;
+
+
+// Mutating/switching variables
+let a = 111;
+let b = 122;
+
+const obj = {a:23, b:12};
+({a, b} = obj);
+console.log(a, b); // Output --> 23 12
