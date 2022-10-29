@@ -6,3 +6,4 @@ undefined, null, boolean, string, symbol, number, object;
 let length = 16; // Number
 let lastName = "Johnson"; // String
 let x = { firstName: "John", lastName: "Doe" }; // Object
+let y = middleName; // undefined

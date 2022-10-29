@@ -64,3 +64,10 @@ for (let loop = 1; loop <= 5; loop++) {
 		console.log(`This is loop inside of loop number ${insideLoop}`);
 	}
 }
+
+// For-of loop
+const array1 = ["a", "b", "c"];
+
+for (const element of array1) {
+	console.log(element); // Output --> a b c
+}

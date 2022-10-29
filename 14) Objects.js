@@ -94,18 +94,116 @@ console.log(namee, mainMenu, categories); // -------{i}
 
 // To assign a new name to the variable
 
-const { namee: resturantName, mainMenu: primaryMenu, categories : tags } = resturant;
+const {
+	namee: resturantName,
+	mainMenu: primaryMenu,
+	categories: tags,
+} = restaurant;
 console.log(resturantName, primaryMenu, tags); // same as {i}
 
-
-// Setting up default value is it doesn't exist.
-const { nameee = []} = resturant;
-
+// Setting up default value if it doesn't exist.
+const { nameee = [] } = restaurant;
 
 // Mutating/switching variables
 let a = 111;
 let b = 122;
 
-const obj = {a:23, b:12};
-({a, b} = obj);
+const obj = { a: 23, b: 12 };
+({ a, b } = obj);
 console.log(a, b); // Output --> 23 12
+
+// ES6 Enhanced Object Literal
+
+const exampleToBeCopied = {
+	thu: {
+		open: 12,
+		close: 22,
+	},
+	fri: {
+		open: 11,
+		close: 23,
+	},
+	sat: {
+		open: 0, // Open 24 hours
+		close: 24,
+	},
+};
+
+const copyHere = {
+	name: "Silson Sapkota",
+	// Instead of doing this to copy (exampleToBeCopied = exampleToBeCopied,) do this (exampleToBeCopied,)
+	exampleToBeCopied: exampleToBeCopied,
+};
+
+// We can also write methods without using function expressions in objects
+
+const example = {
+	fullName: "Mark Miller",
+	mass: 78,
+	height: 1.69,
+
+	// calcBMI: function () {
+	// 	this.BMI = this.mass / this.height ** 2;
+	// 	return this.BMI;
+	// }, Instead of doing this we can just use -->
+	calcBMI() {
+		this.BMI = this.mass / this.height ** 2;
+		return this.BMI;
+	},
+};
+
+// We can name the objects in different ways using index of array
+
+const weekdaysName = ["thu", "fri", "sat"];
+
+const weeks = {
+	[weekdaysName[0]]: {
+		open: 12,
+		close: 22,
+	},
+	[weekdaysName[1]]: {
+		open: 11,
+		close: 23,
+	},
+	[`day-${2 + 4}`]: {
+		open: 0, // Open 24 hours
+		close: 24,
+	},
+};
+
+// Looping Objects, Objects Keys & Values and Entries
+
+const openingHours = {
+	thu: {
+		open: 12,
+		close: 22,
+	},
+	fri: {
+		open: 11,
+		close: 23,
+	},
+	sat: {
+		open: 0, // Open 24 hours
+		close: 24,
+	},
+};
+
+const keys = Object.keys(openingHours);
+console.log(`We are open on ${keys.length} days.`); // Output --> We are open on 3 days.
+
+for (const day of keys) {
+	console.log(day); // Output --> thu fri sat
+}
+
+const values = Object.values(openingHours); // Property Value
+console.log(values);
+
+const entries = Object.entries(openingHours); // Entire Object will turn into arrays with keys and values.
+/* 
+ Output --> Array(3) [ (2) […], (2) […], (2) […] ]
+0: Array [ "thu", {…} ]
+1: Array [ "fri", {…} ]
+2: Array [ "sat", {…} ]
+*/
+
+

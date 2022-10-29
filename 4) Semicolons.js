@@ -27,7 +27,7 @@ However a good practice is to put spaces around operators ( = + - * / )
 for eg --> */
 
 let x = "John"; // Recommended (Clean Code)
-let y = "John"; // Not clean
+let y = "John" // Not clean
 
 // Javascript Code Blocks
 
