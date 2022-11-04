@@ -51,3 +51,13 @@ const [first2, , third] = restaurant.categories; // This will only unpack the tw
 
 //Switching variables
 [third, first2] = [first2, third];
+
+// ---Simple Array Methods---
+// Slicing
+let arr2 = ['a', 'b', 'c', 'd', 'e'];
+console.log(arr2.slice(2)); // Just like string slicing i.e starts from 2 ["c", "d", "e"]
+console.log(arr2.slice(-1)); // Last element i.e ["e"]
+ 
+// Splice is same like slice but it mutates the original array. The splice() method adds and/or removes array elements.
+// The splice() method overwrites the original array.
+console.log(arr2.splice(2));
