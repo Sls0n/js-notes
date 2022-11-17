@@ -71,3 +71,9 @@ const array1 = ["a", "b", "c"];
 for (const element of array1) {
 	console.log(element); // Output --> a b c
 }
+
+// TO get the index of array in for of loop use entries() method and destructuring
+const array2 = ["One", "Two", "Three", "Four", "Five"];
+for (const [i, element] of array2.entries()) {
+	console.log(`${i}: ${element}`); // --> 1: One, 2: Two, .... & so on
+}

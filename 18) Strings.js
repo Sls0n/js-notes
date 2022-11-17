@@ -12,7 +12,7 @@ console.log(airline.indexOf("r")); // --> 6
 console.log(airline.lastIndexOf("r")); // gives the index of last r in the string. --> 10
 console.log(airline.indexOf("Portugal")); // --> -1
 
-console.log(airline.slice(4)); // --> Air Portugal (Slices x amount of letters from the beginning)
+console.log(airline.slice(4)); // --> Air Portugal (Slices x amount of letters from the beginning) or upto xth index
 console.log(airline.slice(4, 7)); // --> Air
 
 // To not hard code
