@@ -26,8 +26,8 @@ However a good practice is to put spaces around operators ( = + - * / )
 
 for eg --> */
 
-let x = "John"; // Recommended (Clean Code)
-let y = "John" // Not clean
+let x = 'John'; // Recommended (Clean Code)
+let y = 'John'; // Not clean
 
 // Javascript Code Blocks
 
@@ -40,6 +40,6 @@ One place you will find statements grouped together in blocks, is in JavaScript 
 for eg --> */
 
 function myFunction() {
-	document.getElementById("demo1").innerHTML = "Hello Dolly!";
-	document.getElementById("demo2").innerHTML = "How are you?";
+  document.getElementById('demo1').innerHTML = 'Hello Dolly!';
+  document.getElementById('demo2').innerHTML = 'How are you?';
 }

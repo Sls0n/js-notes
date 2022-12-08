@@ -12,8 +12,8 @@ new Date(year,month,day,hours,minutes,seconds,ms)
 
 new Date(milliseconds)
 */
-const d = new Date("October 13, 2014 11:13:00");
-const d2 = new Date("2022-03-25");
+const d = new Date('October 13, 2014 11:13:00');
+const d2 = new Date('2022-03-25');
 
 const d3 = new Date(2018, 11, 24, 10, 33, 30, 0); // (Months are in 0 index based which means december is represented by 13)
 
@@ -36,4 +36,4 @@ console.log(future.toDateString()); // --> Thu Nov 19 2037
 // TO get current time
 console.log(Date.now()); // --> 1668774521168
 
-// We can subtract two different dates 
+// We can subtract two different dates

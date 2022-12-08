@@ -4,7 +4,7 @@
 
 // for eg -->
 
-var playerName = "John Doe"; // Declaring Name
+var playerName = 'John Doe'; // Declaring Name
 // In the above code, (Declaring Name) is the comment.
 
 /*

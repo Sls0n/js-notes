@@ -10,18 +10,18 @@ console.log(0.1 + 0.2); // --> 0.30000000000000004 (Weird feature of JS)
 console.log(0.1 + 0.2 === 0.3); // --> False (because of the former reason)
 
 // For conversion
-console.log(Number("23"));
-console.log(+"23");
+console.log(Number('23'));
+console.log(+'23');
 
 // For parsing
-console.log(Number.parseInt("30px", 10)); // --> 30 (putting 10 to convert it to base 10 always do it to avoid error)
-console.log(Number.parseInt("px30", 10)); // --> NaN (Needs to start from number)
+console.log(Number.parseInt('30px', 10)); // --> 30 (putting 10 to convert it to base 10 always do it to avoid error)
+console.log(Number.parseInt('px30', 10)); // --> NaN (Needs to start from number)
 // For floats we need to
-console.log(Number.parseFloat("2.5rem")); // --> 2.5
+console.log(Number.parseFloat('2.5rem')); // --> 2.5
 
 // To check if the number is finite (best way to check if a value is number or not)
 console.log(Number.isFinite(2)); // --> True
-console.log(Number.isFinite("2")); // --> False
+console.log(Number.isFinite('2')); // --> False
 
 console.log(Number.isInteger(2)); // --> True
 console.log(Number.isInteger(2.0)); // --> True
@@ -54,36 +54,36 @@ console.log(BigInt(234124124));
 // SetTimeOut and SetTimeInterval
 // 1 sec = 1000(ms)
 setTimeout(
-	() => console.log("This will be printed after 10 seconds 😏"),
-	10000
+  () => console.log('This will be printed after 10 seconds 😏'),
+  10000
 );
 
 // To use arguments in setTimeout we need to do like this.
 setTimeout(
-	(veg1, veg2) => console.log(`The vegetables are ${veg1} & ${veg2}`),
-	5000,
-	"Spinach",
-	"Brocolli"
+  (veg1, veg2) => console.log(`The vegetables are ${veg1} & ${veg2}`),
+  5000,
+  'Spinach',
+  'Brocolli'
 );
 
 // Clear timeout
-const vegs = ["Spinach", "Brocolli"];
+const vegs = ['Spinach', 'Brocolli'];
 const vegTimer = setTimeout(
-	(veg1, veg2) => console.log(`The vegetables are ${veg1} & ${veg2}`),
-	5000,
-	...vegs
+  (veg1, veg2) => console.log(`The vegetables are ${veg1} & ${veg2}`),
+  5000,
+  ...vegs
 );
 
-if (vegs.includes("Spinach")) {
-	clearTimeout(vegTimer);
+if (vegs.includes('Spinach')) {
+  clearTimeout(vegTimer);
 } // --> It wont print in console
 
 // settimeout prints only once after the set time period whereas setinterval prints every time the time passes by
 setInterval(
-	(veg1, veg2) => console.log(`The vegetables are ${veg1} & ${veg2}`),
-	5000,
-	"Spinach",
-	"Brocolli"
+  (veg1, veg2) => console.log(`The vegetables are ${veg1} & ${veg2}`),
+  5000,
+  'Spinach',
+  'Brocolli'
 ); // This will print every 5 second.
 
 // clearInterval does the same as clearTimeout

@@ -20,9 +20,9 @@ y = 7;
 
 const pi = 3.14;
 
-let myName = "John";
+let myName = 'John';
 
-var mySurname = "Doe";
+var mySurname = 'Doe';
 
 // Difference between Let & Var:
 

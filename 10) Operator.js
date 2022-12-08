@@ -20,8 +20,8 @@ let z = b - c;
 console.log(2 ** 3); // This mean 2^3 (2 to the power 3)
 
 // The + operator can also be used to add (concatenate) strings.
-let firstName = "Silson";
-let lastName = "Sapkota";
+let firstName = 'Silson';
+let lastName = 'Sapkota';
 console.log(firstName + lastName);
 
 /*
@@ -63,8 +63,8 @@ console.log(goodArr); // Output --> [1, 2, 7, 8, 9]
 console.log(...goodArr); // Output --> 1 2 7 8 9
 
 // Spread operator works on all iterables i.e arrays, strings, maps, sets. Not objects!
-const str = "Silson";
-const fullStr = [...str, " ", "S."];
+const str = 'Silson';
+const fullStr = [...str, ' ', 'S.'];
 console.log(fullStr); // Output --> Array(8) [ "S", "i", "l", "s", "o", "n", " ", "S." ]
 // The string will be unpacked into array.
 
@@ -80,16 +80,16 @@ const [x, y, ...others] = [1, 2, 3, 4, 5];
 // Short Circuiting
 
 // Use any data type, return any data type
-console.log(3 || "Silson"); // Here 3 will be printed in console because if there's no boolean in it then it will automatically print the first truthy value i.e 3 in that example.
-console.log("Silson" || 3); // Silson will be printed for the same reason
-console.log("" || 4); // Since empty "" is falsy value, 4 will be printed.
+console.log(3 || 'Silson'); // Here 3 will be printed in console because if there's no boolean in it then it will automatically print the first truthy value i.e 3 in that example.
+console.log('Silson' || 3); // Silson will be printed for the same reason
+console.log('' || 4); // Since empty "" is falsy value, 4 will be printed.
 console.log(0 || true); // true will be printed.
 console.log(1 || true); // 1 will be printed.
 console.log(undefined || null); // Here both are falsy value but the last one which got short circuited will be printed.
 
 // in AND && operator its the exact opposite. (Falsy value will be printed and the last element will be printed in case of both true)
-console.log("Silson" && 3); // 3 will be printed because AND operator prints the last one.
-console.log("" && 4); // Since empty "" is falsy value, it will be printed.
+console.log('Silson' && 3); // 3 will be printed because AND operator prints the last one.
+console.log('' && 4); // Since empty "" is falsy value, it will be printed.
 console.log(0 && true); // 0 will be printed.
 console.log(1 && true); // true will be printed.
 console.log(undefined && null); // Here both are falsy value but the first one which got short circuited will be printed.
@@ -101,12 +101,12 @@ console.log(0 ?? true); // Output --> 0
 
 // Logical Assignment Operator
 const rest1 = {
-	name: "Capri",
-	numGuests: 20,
+  name: 'Capri',
+  numGuests: 20,
 };
 const rest2 = {
-	name: "La piazza",
-	owner: "Giovanni Rossi",
+  name: 'La piazza',
+  owner: 'Giovanni Rossi',
 };
 
 rest2.numGuests = rest2.numGuests ?? 10; //OR rest2.numGuest ||= 10;

@@ -23,7 +23,7 @@ console.log(z);
     Fixed values are called Literals.
     Variable values are called Variables. 
 */
-console.log("Value");
+console.log('Value');
 
 // JavaScript Literals:
 /*
